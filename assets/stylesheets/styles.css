@@ -129,7 +129,7 @@ Variables
   --title-font: "Inter";
   --text-font: "Inter";
   --highlight-pink: #EC4899;
-
+  --highlight-red: #F87171;
 }
 
 /* ---------------------------------------------------------------
@@ -143,15 +143,19 @@ body {
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 2.25rem;
 }
 
 h3 {
   font-size: 1.2em;
+}
+
+h4 {
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -170,12 +174,26 @@ input {
 }
 
 section {
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+input[type="email"], input[type="text"] {
+  flex: 2;
+  padding: 0.35rem 0;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  padding: 0.6rem 0.6rem;
 }
 
 /* ---------------------------------------------------------------
@@ -184,6 +202,39 @@ Modular Classes
 .container {
   max-width: 120ch;
   margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.underline-pink {
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-pink);
+}
+
+.colour-block {
+  border: 2px solid white;
+  width: 20px; /* Switching to 20 instead of 24 because it looks better */
+  height: 12px;
+  border-radius: 4px;
+}
+
+.colour-block--red {
+  background-color: #F87171;
+}
+
+.colour-block--orange {
+  background-color: #FDBA74;
+}
+
+.colour-block--yellow {
+  background-color: #FCD34D;
+}
+
+.colour-block--green {
+  background-color: #6EE7B7;
+}
+
+.colour-block--blue {
+  background-color: #67E8F9;
 }
 
 /* ---------------------------------------------------------------
@@ -222,12 +273,14 @@ Introduction Section
 .introduction {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .introduction__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 
 .introduction__image {
@@ -240,6 +293,10 @@ Introduction Section
   border-radius: 50%;
 }
 
+/* ---------------------------------------------------------------
+Interests Section
+--------------------------------------------------------------- */
+
 .interests__images {
   display: flex;
   gap: 3rem;
@@ -250,22 +307,69 @@ Introduction Section
   width: 250px;
 }
 
-.note-colours {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
+/* ---------------------------------------------------------------
+Feedback Section
+--------------------------------------------------------------- */
+
+.feedback {
+  background-color: #ECFDF5;
+  padding: 2rem 1rem;
+}
+
+.feedback * {
+  margin-top: 0.5rem;
 }
 
 .feedback form, .contact form {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  justify-content: space-between;
+}
+
+.note-colours {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ---------------------------------------------------------------
+Feedback Section
+--------------------------------------------------------------- */
+
+.contact {
+  background-color: #FDF2F8;
+  padding: 2rem 1rem 4rem 1rem;
+}
+
+.contact form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#made-with {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .contact nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.fa-heart {
+  color: var(--highlight-pink);
+  margin-top: 1rem;
+}
+
+.heart-red {
+  color: var(--highlight-red);
+  font-size: 3rem;
+}
+
+.highlight-red {
+  color: var(--highlight-red);
 }
 
 /* ---------------------------------------------------------------
