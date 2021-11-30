@@ -122,11 +122,12 @@ html {
 Variables
 --------------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
 
 :root {
-  --title-font: "Roboto";
-  --text-font: "Roboto";
+  --title-font: "Inter";
+  --text-font: "Inter";
 }
 
 /* ---------------------------------------------------------------
@@ -158,6 +159,7 @@ h4,
 h5,
 h6 {
   font-family: var(--title-font);
+  font-weight: 700;
 }
 
 label,
@@ -194,6 +196,19 @@ header nav ul {
 
 section {
   margin-top: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.highlight {
+  color: #EC4899;
+}
+
+.highlight-green {
+  color: #6EE7B7;
 }
 
 /* Wouldn't it be simpler to have a flex modular class? */
