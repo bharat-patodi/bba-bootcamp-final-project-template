@@ -1,0 +1,239 @@
+/* ---------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------- */
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/* ---------------------------------------------------------------
+Variables
+--------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap");
+
+:root {
+  --title-font: "Roboto";
+  --text-font: "Roboto";
+}
+
+/* ---------------------------------------------------------------
+My Base Styles
+--------------------------------------------------------------- */
+
+body {
+  line-height: 1.5;
+  margin: 0 auto;
+  font-family: var(--text-font);
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+label,
+input {
+  display: block;
+}
+
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.container {
+  max-width: 120ch;
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------
+HomePage Styling
+--------------------------------------------------------------- */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1.5em; */
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+/* Wouldn't it be simpler to have a flex modular class? */
+
+.interests__images {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.note-colours {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.feedback form, .contact form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.contact nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------- */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
