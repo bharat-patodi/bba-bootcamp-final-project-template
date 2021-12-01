@@ -1,4 +1,4 @@
-const feedback = document.getElementById('feedback');
+const feedback = document.getElementById('feedback-text');
 const feedbackSubmit = document.getElementById('feedback-submit');
 const feedbackDisplay = document.getElementById('feedback-display');
 const themeSwitcher = document.getElementById('theme-switcher');
@@ -6,6 +6,7 @@ const heartCounter = document.getElementById('heart-counter');
 let heartCount = 0;
 feedbackSubmit.addEventListener('click', (e) => {
     e.preventDefault();
+    console.log("hi");
     const feedbackText = feedback.value;
     if (feedbackText.length > 0) {
         feedback.value = '';
@@ -54,5 +55,5 @@ heartCounter.addEventListener('click', (e) => {
 
 // TODO:
 // Improve links
-// 
+//
 
