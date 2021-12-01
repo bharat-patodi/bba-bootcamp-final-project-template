@@ -210,6 +210,16 @@ Modular Classes
   padding: 0 5rem;
 }
 
+.light-theme {
+  background-color: #F8F8F8;
+  color: #2C2C2C;
+}
+
+.dark-theme {
+  color: white;
+  background-color: #2d2d2d;
+}
+
 .underline-pink {
   text-decoration: underline;
   text-decoration-color: var(--highlight-pink);
@@ -323,6 +333,7 @@ Feedback Section
 .feedback {
   background-color: #ECFDF5;
   padding: 2rem 1rem;
+  color: black;
 }
 
 .feedback * {
@@ -348,10 +359,13 @@ Feedback Section
   font-weight: 700;
 }
 
-#feedback-display::before {
+#theme-switcher {
+  cursor: pointer;
+}
+/* #feedback-display::before {
   content: "->";
   padding-right: 1rem;
-}
+} */
 
 /* ---------------------------------------------------------------
 Contact Section
@@ -360,6 +374,7 @@ Contact Section
 .contact {
   background-color: #FDF2F8;
   padding: 2rem 2rem 4rem 2rem;
+  color: black;
 }
 
 .contact > * {
