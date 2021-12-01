@@ -52,3 +52,7 @@ heartCounter.addEventListener('click', (e) => {
     // }, 2000);
 });
 
+// TODO:
+// Improve links
+// 
+
