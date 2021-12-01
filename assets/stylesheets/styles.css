@@ -248,14 +248,15 @@ Header
 --------------------------------------------------------------- */
 
 header nav {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* padding: 1.5em; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
@@ -328,7 +329,7 @@ Feedback Section
   margin-top: 0.5rem;
 }
 
-.feedback form, .contact form {
+.feedback form, .contact form, .input-text {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -341,8 +342,19 @@ Feedback Section
   flex-wrap: wrap;
 }
 
+#feedback-display {
+  min-height: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#feedback-display::before {
+  content: "->";
+  padding-right: 1rem;
+}
+
 /* ---------------------------------------------------------------
-Feedback Section
+Contact Section
 --------------------------------------------------------------- */
 
 .contact {

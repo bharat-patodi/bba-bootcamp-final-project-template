@@ -19,9 +19,6 @@
             <li><a href="#">Contact</a></li>
           </ul>
           <ul>
-            <li class="colour-block colour-block--orange"></li>
-            <li class="colour-block colour-block--green"></li>
-            <li class="colour-block colour-block--blue"></li>
             <li>L/D</li>
           </ul>
         </nav>
@@ -39,10 +36,11 @@
             </p>
           </div>
           <picture class="introduction__image">
-            <img
+            <!-- <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png"
               alt="placeholder image"
-            />
+            /> -->
+            <img src="assets/images/profile.jpg" alt="Profile Image">
           </picture>
         </section>
         <section class="about">
@@ -120,21 +118,35 @@
           <h2>Pen down a <span class="highlight-green">note</span> for me</h2>
           <p>Put down a few words about me and choose a color for your note.</p>
           <div class="note-colours">
-            <div class="colour-block colour-block--red"></div>
-            <div class="colour-block colour-block--orange"></div>
-            <div class="colour-block colour-block--yellow"></div>
-            <div class="colour-block colour-block--green"></div>
-            <div class="colour-block colour-block--blue"></div>
+            <input type="radio" name="colour-blocks" id="colour-block-red" value="red">
+            <label for="colour-block-red">Red</label>
+            <input type="radio" name="colour-blocks" id="colour-block-green" value="green">
+            <label for="colour-block-green">Green</label>
+            <input type="radio" name="colour-blocks" id="colour-block-blue" value="blue">
+            <label for="colour-block-blue">Blue</label>
+            <input type="radio" name="colour-blocks" id="colour-block-yellow" value="yellow">
+            <label for="colour-block-yellow">Yellow</label>
+            <input type="radio" name="colour-blocks" id="colour-block-orange" value="orange">
+            <label for="colour-block-orange">Orange</label>
           </div>
-          <form action="#">
-            <input
+            <!-- <div class="note-colours">
+              <div class="colour-block colour-block--red"></div>
+              <div class="colour-block colour-block--orange"></div>
+              <div class="colour-block colour-block--yellow"></div>
+              <div class="colour-block colour-block--green"></div>
+              <div class="colour-block colour-block--blue"></div>
+            </div> -->
+            <div class="input-text">
+              <input
               type="text"
               name="feedback"
               id="feedback"
               placeholder="Pen down a note for me. :)"
-            />
-            <input type="submit" value="Add Note" />
+              />
+              <input type="submit" value="Add Note" id="feedback-submit"/>
+            </div>
           </form>
+          <p id = "feedback-display"></p>
         </section>
         <section class="heart">
           <h2><span class="highlight-red">Loved</span> my portfolio?</h2>
