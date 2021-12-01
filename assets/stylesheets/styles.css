@@ -182,9 +182,14 @@ a {
   color: black;
 }
 
+hr {
+  width: 65%;
+  border: 1px solid #D1D5DB;
+}
+
 input[type="email"], input[type="text"] {
   flex: 2;
-  padding: 0.35rem 0;
+  padding: 0.35rem;
   border: none;
   border-radius: 4px;
 }
@@ -208,6 +213,7 @@ Modular Classes
 .underline-pink {
   text-decoration: underline;
   text-decoration-color: var(--highlight-pink);
+  margin-bottom: 1rem;
 }
 
 .colour-block {
@@ -301,10 +307,12 @@ Interests Section
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 250px;
 }
 
 .interests__images img {
-  width: 250px;
+  max-width: 250px;
 }
 
 /* ---------------------------------------------------------------
@@ -339,23 +347,30 @@ Feedback Section
 
 .contact {
   background-color: #FDF2F8;
-  padding: 2rem 1rem 4rem 1rem;
+  padding: 2rem 2rem 4rem 2rem;
 }
 
-.contact form {
-  display: flex;
-  justify-content: space-between;
+.contact > * {
+  margin-top: 1rem;
 }
 
 #made-with {
-  margin-top: 2rem;
   text-align: center;
 }
 
 .contact nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
+}
+
+.contact nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
 }
 
 .fa-heart {
@@ -370,6 +385,10 @@ Feedback Section
 
 .highlight-red {
   color: var(--highlight-red);
+}
+
+#subscriber-count {
+  margin-bottom: 3rem;
 }
 
 /* ---------------------------------------------------------------
