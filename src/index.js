@@ -2,7 +2,8 @@ const feedback = document.getElementById('feedback');
 const feedbackSubmit = document.getElementById('feedback-submit');
 const feedbackDisplay = document.getElementById('feedback-display');
 const themeSwitcher = document.getElementById('theme-switcher');
-
+const heartCounter = document.getElementById('heart-counter');
+let heartCount = 0;
 feedbackSubmit.addEventListener('click', (e) => {
     e.preventDefault();
     const feedbackText = feedback.value;
@@ -36,3 +37,18 @@ themeSwitcher.addEventListener('click', (e) => {
         })
     }
 });
+
+heartCounter.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (document.getElementsByClassName("toast").length) {
+        document.getElementsByClassName("toast")[0].remove();
+    }
+    const toast = document.createElement('div');
+    toast.classList.add('toast');
+    toast.innerText = ++heartCount;
+    document.getElementsByClassName('heart')[0].appendChild(toast);
+    setTimeout(() => {
+        toast.remove();
+    }, 2000);
+});
+
