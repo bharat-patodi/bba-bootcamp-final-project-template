@@ -7,12 +7,13 @@ const heartCounter = document.getElementById('heart-counter');
 let heartCount = 0;
 feedbackSubmit.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log("hi");
+    document.querySelector(".highlight-green").style.color = "#6EE7B7";
     const feedbackText = feedback.value;
     if (feedbackText.length > 0) {
         feedback.value = '';
         feedback.placeholder = 'Thanks for your feedback!';
         feedbackDisplay.innerText = feedbackText;
+        feedbackDisplay.style.backgroundColor = '#999';
         const inputColour = document.querySelector(
           'input[name="colour-blocks"]:checked'
         ).value;
@@ -22,6 +23,7 @@ feedbackSubmit.addEventListener('click', (e) => {
                 break;
             case 'green':
                 feedbackColour = "#6EE7B7";
+                document.querySelector(".highlight-green").style.color = "#000";
                 break;
             case 'blue':
                 feedbackColour = "#67E8F9";
