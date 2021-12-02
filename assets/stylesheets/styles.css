@@ -351,7 +351,7 @@ Feedback Section
   margin-top: 0.5rem;
 }
 
-.feedback form, .input-text  {
+.input-text  {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -368,6 +368,10 @@ Feedback Section
   min-height: 2rem;
   font-size: 1.25rem;
   font-weight: 700;
+  background-color: #999;
+  display: inline-block;
+  padding: 0 1rem;
+  border-radius: 4px;
 }
 
 #theme-switcher {
@@ -394,13 +398,6 @@ Feedback Section
 }
 
 .toast {
-  /* width: 50px;
-  height: 50px; */
-  /* border-radius: 50%; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* background-color: rgba(100, 100, 100, 0.5); */
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--highlight-red);
@@ -460,7 +457,7 @@ Media Queries
 
 /* TODO
 ✔️ cards with links to wiki pages
-border radius
+✔️ border radius
 
 Write a note
 -> Two options for background colour and text colour

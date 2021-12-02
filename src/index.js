@@ -1,3 +1,4 @@
+const feedbackSection = document.querySelector('.feedback');
 const feedback = document.getElementById('feedback-text');
 const feedbackSubmit = document.getElementById('feedback-submit');
 const feedbackDisplay = document.getElementById('feedback-display');
@@ -12,10 +13,31 @@ feedbackSubmit.addEventListener('click', (e) => {
         feedback.value = '';
         feedback.placeholder = 'Thanks for your feedback!';
         feedbackDisplay.innerText = feedbackText;
-        const feedbackColour = document.querySelector(
+        const inputColour = document.querySelector(
           'input[name="colour-blocks"]:checked'
         ).value;
+        switch (inputColour) {
+            case 'red':
+                feedbackColour = "#F87171";
+                break;
+            case 'green':
+                feedbackColour = "#6EE7B7";
+                break;
+            case 'blue':
+                feedbackColour = "#67E8F9";
+                break;
+            case 'yellow':
+                feedbackColour = "#FCD34D";
+                break;
+            case 'orange':
+                feedbackColour = "#FDBA74";
+                break;
+            default:
+                feedbackColour = '#000000';
+        }
+
         feedbackDisplay.style.color = feedbackColour;
+        feedbackSection.style.backgroundColor = feedbackColour;
     } else {
         feedback.placeholder = 'Please enter your feedback!';
     }
