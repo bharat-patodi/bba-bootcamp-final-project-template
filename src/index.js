@@ -51,9 +51,9 @@ heartCounter.addEventListener('click', (e) => {
     if (document.getElementsByClassName("toast").length) {
         document.getElementsByClassName("toast")[0].remove();
     }
-    const toast = document.createElement('div');
+    const toast = document.createElement('span');
     toast.classList.add('toast');
-    toast.innerText = ++heartCount;
+    toast.innerText = '+' + ++heartCount;
     document.getElementsByClassName('heart')[0].appendChild(toast);
     // setTimeout(() => {
     //     toast.remove();

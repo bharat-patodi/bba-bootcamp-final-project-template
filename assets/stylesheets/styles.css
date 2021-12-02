@@ -394,15 +394,16 @@ Feedback Section
 }
 
 .toast {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
+  /* width: 50px;
+  height: 50px; */
+  /* border-radius: 50%; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: rgba(100, 100, 100, 0.5);
+  align-items: center; */
+  /* background-color: rgba(100, 100, 100, 0.5); */
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--highlight-red);
 }
 
 #heart-counter {
