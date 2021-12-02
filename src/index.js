@@ -11,7 +11,7 @@ feedbackSubmit.addEventListener('click', (e) => {
     if (feedbackText.length > 0) {
         feedback.value = '';
         feedback.placeholder = 'Thanks for your feedback!';
-        feedbackDisplay.innerText = '->  ' + feedbackText;
+        feedbackDisplay.innerText = feedbackText;
         const feedbackColour = document.querySelector(
           'input[name="colour-blocks"]:checked'
         ).value;

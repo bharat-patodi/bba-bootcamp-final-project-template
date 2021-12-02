@@ -178,7 +178,7 @@ section {
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: black;
 }
 
@@ -224,6 +224,17 @@ Modular Classes
   text-decoration: underline;
   text-decoration-color: var(--highlight-pink);
   margin-bottom: 1rem;
+}
+
+.interest-card {
+  text-align: center;
+  background-color: lightgrey;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.interest-card a {
+  text-decoration: none;
 }
 
 .colour-block {
@@ -319,11 +330,11 @@ Interests Section
   gap: 3rem;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: 250px;
 }
 
 .interests__images img {
   max-width: 250px;
+  border-top-right-radius: 10px; border-top-left-radius: 10px;
 }
 
 /* ---------------------------------------------------------------
@@ -340,7 +351,7 @@ Feedback Section
   margin-top: 0.5rem;
 }
 
-.feedback form, .contact form, .input-text {
+.feedback form, .input-text  {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -365,46 +376,7 @@ Feedback Section
 }
 
 #sun {
-
   display: none;
-}
-
-/* #feedback-display::before {
-  content: "->";
-  padding-right: 1rem;
-} */
-
-/* ---------------------------------------------------------------
-Contact Section
---------------------------------------------------------------- */
-
-.contact {
-  background-color: #FDF2F8;
-  padding: 2rem 2rem 4rem 2rem;
-  color: black;
-}
-
-.contact > * {
-  margin-top: 1rem;
-}
-
-#made-with {
-  text-align: center;
-}
-
-.contact nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.contact nav ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  flex-direction: column;
 }
 
 .fa-heart {
@@ -442,6 +414,31 @@ Contact Section
 #subscriber-count {
   margin-bottom: 3rem;
 }
+/* ---------------------------------------------------------------
+Footer Section
+--------------------------------------------------------------- */
+
+footer {
+  background-color: #FDF2F8;
+  padding: 2rem 2rem 4rem 2rem;
+  color: black;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+footer i {
+  font-size: 1.25rem;
+}
+
 
 /* ---------------------------------------------------------------
 Media Queries
@@ -458,3 +455,21 @@ Media Queries
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
+
+
+/* TODO
+✔️ cards with links to wiki pages
+border radius
+
+Write a note
+-> Two options for background colour and text colour
+-> background color for the note
+✔️ remove the arrow
+✔️ Placeholder text -> change to 'write'
+*/
+
+/*
+Add the counter right adjacent to the heart
+Colour it red with a + sign ahead of it
+Also, add this to the number in the paragraph above as the no. of people who like it.
+*/
