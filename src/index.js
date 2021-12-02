@@ -27,15 +27,22 @@ themeSwitcher.addEventListener('click', (e) => {
     if (theme.contains('dark-theme')) {
         theme.remove('dark-theme');
         theme.add('light-theme');
+        // Edge Case -> The header nav links should be turned to black separately
         headerNavLinks.forEach(link => {
             link.style.color = 'black';
-        })
+        });
+        document.querySelector('#sun').style.display = 'none';
+        document.querySelector("#moon").style.display = "inline-block";
+
     } else {
         theme.remove('light-theme');
         theme.add('dark-theme');
+        // Edge Case -> The header nav links should be turned to white separately
         headerNavLinks.forEach(link => {
             link.style.color = '#fff';
-        })
+        });
+        document.querySelector('#moon').style.display = 'none';
+        document.querySelector("#sun").style.display = "inline-block";
     }
 });
 

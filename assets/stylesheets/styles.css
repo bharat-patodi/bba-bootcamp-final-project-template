@@ -361,7 +361,14 @@ Feedback Section
 
 #theme-switcher {
   cursor: pointer;
+  font-size: 1.35rem;
 }
+
+#sun {
+
+  display: none;
+}
+
 /* #feedback-display::before {
   content: "->";
   padding-right: 1rem;
