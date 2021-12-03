@@ -75,7 +75,7 @@ const switchBackground = () => {
   ).value;
   switch (inputColour) {
     case "red":
-      feedbackColour = "#F87171";
+      feedbackColour = "#f5a3a3";
       break;
     case "green":
       feedbackColour = "#ECFDF5";

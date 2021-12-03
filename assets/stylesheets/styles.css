@@ -246,6 +246,7 @@ Modular Classes
 
 .colour-block--red {
   background-color: #F87171;
+  /* background-color: #f5a3a3; */
 }
 
 .colour-block--orange {
@@ -290,7 +291,7 @@ header nav ul {
 
 .highlight-green {
   color: #6EE7B7;
-  color: ;
+  /* color: ; */
 }
 
 /* Wouldn't it be simpler to have a flex modular class? */
