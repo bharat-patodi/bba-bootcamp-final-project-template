@@ -19,7 +19,6 @@ feedbackSubmit.addEventListener("click", (e) => {
     feedbackDisplay.innerText = feedbackText;
     feedbackDisplay.style.backgroundColor = "#2d2d2d";
     switchBackground();
-    feedbackDisplay.style.color = feedbackColour;
   } else {
     feedback.placeholder = "Please enter your feedback!";
   }
@@ -92,6 +91,7 @@ const switchBackground = () => {
     // default:
     //   feedbackColour = "#fff";
   }
+    feedbackDisplay.style.color = feedbackColour;
 
   feedbackSection.style.backgroundColor = feedbackColour;
 };
