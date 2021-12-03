@@ -290,6 +290,7 @@ header nav ul {
 
 .highlight-green {
   color: #6EE7B7;
+  /* color: #00ff00; */
 }
 
 /* Wouldn't it be simpler to have a flex modular class? */
@@ -345,6 +346,7 @@ Feedback Section
   background-color: #ECFDF5;
   padding: 2rem 1rem;
   color: black;
+  border: 3px solid green;
 }
 
 .feedback * {
@@ -360,14 +362,17 @@ Feedback Section
 
 .note-colours {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   flex-wrap: wrap;
 }
 
 #feedback-display {
+  /* margin-top: 2rem; */
   min-height: 2rem;
   font-size: 1.25rem;
   font-weight: 700;
+  text-align: center;
+  margin: 2rem auto 0 auto;
   /* background-color: #999; */
   display: inline-block;
   padding: 0 1rem;

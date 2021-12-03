@@ -7,7 +7,7 @@ const heartCounter = document.getElementById('heart-counter');
 let heartCount = 0;
 feedbackSubmit.addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelector(".highlight-green").style.color = "#6EE7B7";
+    // document.querySelector(".highlight-green").style.color = "#6EE7B7";
     const feedbackText = feedback.value;
     if (feedbackText.length > 0) {
         feedback.value = '';
@@ -22,8 +22,7 @@ feedbackSubmit.addEventListener('click', (e) => {
                 feedbackColour = "#F87171";
                 break;
             case 'green':
-                feedbackColour = "#6EE7B7";
-                document.querySelector(".highlight-green").style.color = "#000";
+                feedbackColour = "#ECFDF5";
                 break;
             case 'blue':
                 feedbackColour = "#67E8F9";
