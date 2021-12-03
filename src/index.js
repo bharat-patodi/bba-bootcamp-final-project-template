@@ -5,7 +5,7 @@ const feedbackDisplay = document.getElementById("feedback-display");
 const themeSwitcher = document.getElementById("theme-switcher");
 const heartCounter = document.getElementById("heart-counter");
 let heartCount = 0;
-let feedbackColour = "#000000";
+let feedbackColour = "#fff";
 
 // Capture feedback text
 
@@ -65,13 +65,8 @@ heartCounter.addEventListener("click", (e) => {
   if (document.getElementsByClassName("toast").length) {
     document.getElementsByClassName("toast")[0].remove();
   }
-  const toast = document.createElement("span");
-  toast.classList.add("toast");
+  const toast = document.querySelector("#toast");
   toast.innerText = "+" + (++heartCount + 32);
-  document.getElementsByClassName("heart")[0].appendChild(toast);
-  // setTimeout(() => {
-  //     toast.remove();
-  // }, 2000);
 });
 
 const switchBackground = () => {
@@ -94,8 +89,8 @@ const switchBackground = () => {
     case "orange":
       feedbackColour = "#FDBA74";
       break;
-    default:
-      feedbackColour = "#000000";
+    // default:
+    //   feedbackColour = "#fff";
   }
 
   feedbackSection.style.backgroundColor = feedbackColour;

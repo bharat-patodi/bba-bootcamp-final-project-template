@@ -382,6 +382,7 @@ Feedback Section
   display: inline-block;
   padding: 0 1rem;
   border-radius: 4px;
+  color: white;
 }
 
 #theme-switcher {
@@ -408,7 +409,7 @@ Feedback Section
   color: var(--highlight-red);
 }
 
-.toast {
+#toast {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--highlight-red);
