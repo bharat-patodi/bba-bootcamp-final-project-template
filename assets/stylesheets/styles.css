@@ -290,7 +290,7 @@ header nav ul {
 
 .highlight-green {
   color: #6EE7B7;
-  /* color: #00ff00; */
+  color: ;
 }
 
 /* Wouldn't it be simpler to have a flex modular class? */
@@ -365,14 +365,20 @@ Feedback Section
   flex-wrap: wrap;
 }
 
+#feedback-display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
 #feedback-display {
-  /* margin-top: 2rem; */
   min-height: 2rem;
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
-  margin: 2rem auto 0 auto;
-  /* background-color: #999; */
+  margin: 0 auto 0 auto;
   display: inline-block;
   padding: 0 1rem;
   border-radius: 4px;
