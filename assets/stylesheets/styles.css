@@ -449,13 +449,25 @@ footer i {
   font-size: 1.25rem;
 }
 
+.mobile-view {
+  display: none;
+}
 
 /* ---------------------------------------------------------------
 Media Queries
 --------------------------------------------------------------- */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
